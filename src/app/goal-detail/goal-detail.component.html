@@ -1,3 +1,6 @@
-<p>{{goal.description}}</p>
-<button (click)= 'goalComplete(true)'>Complete</button
-  
+<p>Author: {{goal.author}}</p>
+<p>Published by: {{goal.publisher}}</p>
+<p>Published {{goal.completeDate|date|dateCount}} days ago</p>
+<button (click)='upvote()'class="btn btn-outline-warning">{{goal.upvote}} Upvote</button>
+<button (click)='downvote()'class="btn btn-outline-info">{{goal.downvote}} Downvote</button>
+<button (click)= 'quoteDelete(true)' class="btn btn-outline-danger">Delete</button>
